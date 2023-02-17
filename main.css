@@ -1,0 +1,105 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Feb 15, 2023, 8:18:15 PM
+    Author     : zpace
+*/
+body{
+    padding: 0;
+    margin: 0;
+}
+.hero-image{
+    height: 45%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid black;
+}
+
+.hero-text{
+    margin: 0;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+header{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 0;
+    
+    
+}
+.container-fluid{
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 10px;
+    background-color:white;
+    
+    
+}
+
+.row{
+    padding-bottom: 5px;
+}
+
+.col-3{
+    margin-left: 0;
+    margin-right: 0;
+}
+.col-3 img{
+    height: 40px;
+    
+}
+
+.col-9{
+  margin-right: 0;  
+}
+.col-9 button {
+    float: right;
+   
+}
+
+.row2{
+    margin-right: -14px;
+    margin-left: -14px;
+}
+.col-12{
+   
+    margin-right: -25px;
+    background-color: blue;
+}
+.col-12 nav{
+    
+}
+
+.col-12 ul{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 50px;
+    overflow: hidden;
+    
+}
+
+.col-12 li{
+   float: left;
+}
+
+.col-12 li a{
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    border: 3px solid black;
+}
+
+
