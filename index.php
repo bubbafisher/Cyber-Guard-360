@@ -11,36 +11,40 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
               integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
               crossorigin="anonymous">
         
+        
         <link rel="stylesheet" href="main.css"/>
         <title>CyberGuard 360</title>
         
     </head>
     <body>
         <header>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-3">
-                        <img src='images/CG360.png' alt='Cyber Guard Logo'>
-                    </div>
-                <div class="col-9">
-                    <button>Sign In</button>
-                </div>
-                </div>
+            
+            <div id="logo">
                 
-            <div class="container-fluid2">
-             <div class="row2">
-                 <div class="col-12">
-                     <nav>
-                         <ul>
-                             <li><a href="#">Products</a></li>
-                             <li><a href="#">Other</a></li>
-                         </ul>
-                     </nav>
-                 </div>
-             </div>
+                <img src="images/CG360.png" alt="CyberGuard360 logo">
                 
-                </div>
             </div>
+            
+            <div id="sign_up">
+                
+                 <input type="button"
+                        onclick="window.location.href='views/login_page.php';"
+                        value="Sign In">
+                
+            </div>
+            
+   
+            
+            <ul class="nav">
+                
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+                
+               
+            
         </header>
         
         <!-- creating landing page Hero -->
@@ -49,7 +53,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                 <h1>Welcome to CyberGuard360</h1>
                 <p>Test Your Business' PCI Compliance With Us </p>
                 
-                <button>Secure Now!</button>
+                <input type="button"
+                       onclick="window.location.href='views/login_page.php';"
+                       value="Secure Now">
             </div>
             
             

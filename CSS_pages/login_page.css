@@ -1,0 +1,81 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Feb 17, 2023, 6:23:53 PM
+    Author     : zpace
+*/
+
+header{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 0;
+    
+    
+}
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 29%;
+    height: 50%;
+    padding: 100px;
+    background-color:#0066ff;
+}
+
+#logo{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.login_wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#aligned {
+     
+    margin: .5em 0 2em;
+}
+
+#aligned h1{
+    text-align: center;
+    margin-bottom: 20px;
+   
+}
+
+#aligned label {
+    width: 8em;
+    margin-top: .2em;
+    margin-right: 1em;
+    margin-bottom: 10px;
+    float: left;
+}
+#aligned input {
+    float: left;
+}
+#aligned input[type="text"] {
+    width: 16.6em;
+}
+
+#aligned input[type ="submit"]{
+    text-align: center;
+}
+
+#extras{
+   margin-top:100px; 
+   text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-70%, -50%);
+    
+}
+
+
