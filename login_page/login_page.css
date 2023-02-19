@@ -6,11 +6,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     Created on : Feb 17, 2023, 6:23:53 PM
     Author     : zpace
 */
-
+body{
+    
+    background-color: #ededed;
+}
 header{
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 45px;
     margin-right: 0;
+    background-color: #34576F;
     
     
 }
@@ -20,10 +24,12 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 29%;
-    height: 50%;
+    width: 400px;
+    height: 425px;
     padding: 100px;
-    background-color:#0066ff;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 1px 3px 3px #878787;
 }
 
 #logo{
@@ -51,9 +57,9 @@ header{
 }
 
 #aligned label {
-    width: 8em;
+    width: 6.5em;
     margin-top: .2em;
-    margin-right: 1em;
+    margin-right: 1.5em;
     margin-bottom: 10px;
     float: left;
 }
@@ -61,21 +67,31 @@ header{
     float: left;
 }
 #aligned input[type="text"] {
+    margin-top: -15px;
     width: 16.6em;
+    background-color: #eaeaea;
+    border: .5px solid #dbdbdb;
+    border-radius: 5px;
+    height: 35px;
 }
 
 #aligned input[type ="submit"]{
     text-align: center;
+    width: 100%;
+    margin-top: -12px;
+    margin-bottom: 35px;
 }
 
-#extras{
-   margin-top:100px; 
-   text-align: center;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-70%, -50%);
-    
+#aligned p{
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
 }
+
+#aligned a{
+    text-decoration: none;
+    color: #3d5dff;
+}
+
 
 

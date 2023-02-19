@@ -9,7 +9,7 @@
               integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
               crossorigin="anonymous">
         
-        <link rel="stylesheet" href="../CSS_pages/login_page.css">
+        <link rel="stylesheet" href="login_page.css">
         
         
         
@@ -33,18 +33,20 @@
     
     <div class="login_wrapper">
         <div id="aligned">
-            <h1>Login</h1>
+            <h1>Log in</h1>
             <form action="." method="post">
                 <label> Email</label><br><br>
                 
                 <input type="text" name="email"> <br><br>
                 
-                <label>Password </label>        <a href="#">Forgot Password?</a><br><br> 
+                <label>Password</label>        <a href="#">Forgot Password?</a><br><br> 
                 
                 <input type="text" name="password"><br><br>
                 <input type="hidden" name="action" value="login">
                     <input type="submit" value="Login">
                         </form><br>
+                        
+                <p> Don't have an Account? <a href='#'>Sign Up</a></p>
         </div>
         
     </div>
@@ -52,7 +54,7 @@
     </div>
      
     <div id='extras'>
-     <p> Don't have an Account? <a href='#'>Sign Up</a></p>
+     
     </div>
 </main>
     </body>

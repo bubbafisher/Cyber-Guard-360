@@ -28,7 +28,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
             <div id="sign_up">
                 
                  <input type="button"
-                        onclick="window.location.href='views/login_page.php';"
+                        onclick="window.location.href='login_page/login_page.php';"
                         value="Sign In">
                 
             </div>
@@ -54,7 +54,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                 <p>Test Your Business' PCI Compliance With Us </p>
                 
                 <input type="button"
-                       onclick="window.location.href='views/login_page.php';"
+                       onclick="window.location.href='login_page/login_page.php';"
                        value="Secure Now">
             </div>
             
