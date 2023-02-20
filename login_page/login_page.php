@@ -2,6 +2,7 @@
 
 
 <html>
+
     <head>
         <meta charset="UTF-8">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
@@ -46,7 +47,9 @@
                     <input type="submit" value="Login">
                         </form><br>
                         
-                <p> Don't have an Account? <a href='#'>Sign Up</a></p>
+                <p> Don't have an Account?
+                    <a href='../create_account/create_account.php'>Sign Up</a>
+                </p>
         </div>
         
     </div>
