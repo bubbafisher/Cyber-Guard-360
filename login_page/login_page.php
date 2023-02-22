@@ -40,11 +40,12 @@
                 
                 <input type="text" name="email"> <br><br>
                 
-                <label>Password</label>        <a href="#">Forgot Password?</a><br><br> 
+                <label>Password</label> <a href="#">Forgot Password?</a><br><br> 
                 
                 <input type="text" name="password"><br><br>
+                
                 <input type="hidden" name="action" value="login">
-                    <input type="submit" value="Login">
+                    <input type="submit" value="login">
                         </form><br>
                         
                 <p> Don't have an Account?
