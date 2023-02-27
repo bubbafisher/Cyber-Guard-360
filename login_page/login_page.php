@@ -23,7 +23,9 @@
             
             <div id="logo">
                 
-                <img src="../images/CG360.png" alt="CyberGuard360 logo">
+                <a href="../index.php"><img
+                        src="../images/CG360.png" 
+                        alt="CyberGuard360 logo"></a>
                 
             </div>
         </header> 
