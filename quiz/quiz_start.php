@@ -39,7 +39,7 @@
                     </div>
                     <div class="row justify-content-center">
                         <div class="col">
-                            <a href="quiz.html" class="btn btn-primary">Begin</a>
+                            <a href="quiz.php" class="btn btn-primary">Begin</a>
                         </div>
                     </div>
                 </div>
