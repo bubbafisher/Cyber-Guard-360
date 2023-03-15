@@ -46,17 +46,45 @@
                                 
                                 <label> Email</label> <input type="text" name="email">
                                 
-                                <br><br><br><br><br>
-                                
-                                <label> Business Name</label> <input type="text" name="bName">
-                                
-                                <br><br>
-                                
-                                 <label> Address</label> <input type="text" name="address">
-                                
                                 <br><br>
                                 
                                 <label> Phone #</label> <input type="text" name="phone">
+                                
+                                <br><br>
+                                
+                                <label> Business Name</label> <input type="text" name="bName">
+                                <br><br><br><br><br>
+                                
+                            
+                                
+                                <h2>Address</h2>
+                                <br>
+                                
+                                 <label> Address Line 1</label> <input type="text" name="address">
+                                
+                                <br><br>
+                                
+                                <label> Address Line 2*</label> <input type="text" name="address">
+                                
+                                <br><br>
+                                
+                                <label> City </label> <input type="text" name="address">
+                                
+                                <br><br>
+                                
+                                <label> State/Province</label> <input type="text" name="address">
+                                
+                                <br><br>
+                                
+                                <label> Zipcode </label> <input type="text" name="address">
+                                
+                                <br><br>
+                                
+                                <label> Country </label> <input type="text" name="address">
+                                
+                                <br><br>
+                                
+                                
                                 
                                 
                 

@@ -2,7 +2,7 @@
 
 function get_accounts(){
     global $db;
-    $query = 'SELECT * FROM login_info
+    $query = 'SELECT * FROM accounts
               ORDER BY username';
     
     $statement = $db->prepare($query);
@@ -16,7 +16,7 @@ function get_accounts(){
 function login_cust($email, $password){
     global $db;
     
-    $query = 'SELECT * FROM login_info
+    $query = 'SELECT * FROM accounts
               WHERE email = :email and password = :password';
     
     $statement = $db->prepare($query);
