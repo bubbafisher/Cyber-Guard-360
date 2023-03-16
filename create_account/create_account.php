@@ -60,27 +60,27 @@
                                 <h2>Address</h2>
                                 <br>
                                 
-                                 <label> Address Line 1</label> <input type="text" name="address">
+                                 <label> Address Line 1</label> <input type="text" name="add1">
                                 
                                 <br><br>
                                 
-                                <label> Address Line 2*</label> <input type="text" name="address">
+                                <label> Address Line 2*</label> <input type="text" name="add2">
                                 
                                 <br><br>
                                 
-                                <label> City </label> <input type="text" name="address">
+                                <label> City </label> <input type="text" name="city">
                                 
                                 <br><br>
                                 
-                                <label> State/Province</label> <input type="text" name="address">
+                                <label> State/Province</label> <input type="text" name="state">
                                 
                                 <br><br>
                                 
-                                <label> Zipcode </label> <input type="text" name="address">
+                                <label> Zipcode </label> <input type="text" name="zip">
                                 
                                 <br><br>
                                 
-                                <label> Country </label> <input type="text" name="address">
+                                <label> Country </label> <input type="text" name="country">
                                 
                                 <br><br>
                                 
