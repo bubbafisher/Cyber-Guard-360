@@ -37,9 +37,9 @@
                             <h4>This quiz will help you learn what steps you need to take to be PCI DSS compliant.</h4>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
+                    <div class="row horizontal-center">
                         <div class="col">
-                            <a href="quiz.php" class="btn btn-primary">Begin</a>
+                            <a href="quiz.php" class="btn btn-primary btn-lg">Begin</a>
                         </div>
                     </div>
                 </div>
