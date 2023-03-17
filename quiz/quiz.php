@@ -32,16 +32,39 @@
                 <h1>Compliance Quiz</h1>
                     
                 <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-2">
+                            <a href="quiz_start.php" class="btn btn-secondary">Previous</a>
+                        </div>
+                        <div class="col-2">
+                            <a href="quiz_end.php" class="btn btn-secondary">Next</a>
+                        </div>
+                    </div>
+                    <br>
                     <div class="row">
                         <div class="col">
                             <h4>Are processes and mechanisms for installing and maintaining network security controls defined and understood?</h4>
                         </div>
                     </div>
                     <br>
-                    <div class="row">
-                        <div class="col-6"></div>
-                            <button type="button" class="btn btn-primary btn-lg btn-block">Yes</button>
-                            <button type="button" class="btn btn-primary btn-lg btn-block">No</button>
+                    <div class="row justify-content-center">
+                        <div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
+                            <div class="col-2">
+                                <label class="btn btn-primary btn-lg">
+                                    <input type="radio" name="options" id="option1" autocomplete="off"> Yes
+                                  </label>
+                            </div>
+                            <div class="col-2">
+                                <label class="btn btn-primary btn-lg">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> No
+                              </label>
+                            </div>
+                            <div class="col-2">
+                                <label class="btn btn-primary btn-lg disabled">
+                                    <input type="radio" name="options" id="option3" autocomplete="off" disabled> N/A
+                                  </label>
+                            </div>
+                            
                         </div>
                     </div>
                     <br>
@@ -67,14 +90,6 @@
                                 </li>
                                 <li>Verification that personnel understand documentation and the roles and responsibilities to which they have been assigned is obtained.</li>
                             </ul> -->
-                        </div>
-                    </div>
-                    <div class="row justify-content-between">
-                        <div class="col-2">
-                            <a href="quiz_start.php" class="btn btn-primary">Previous</a>
-                        </div>
-                        <div class="col-2">
-                            <a href="quiz_end.php" class="btn btn-primary">Next</a>
                         </div>
                     </div>
                 </div>
