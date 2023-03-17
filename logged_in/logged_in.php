@@ -36,7 +36,7 @@
                 
                  <input type="button"
                         onclick="window.location.href='../login_page/login_page.php';"
-                        value="<?php echo $account['username']; ?>">
+                        value="<?php echo $account['email']; ?>">
                 
             </div>
             
@@ -56,5 +56,5 @@
        
     </body>
 
-  <?php include '';
+  <?php// include '../views/footer.php';
 

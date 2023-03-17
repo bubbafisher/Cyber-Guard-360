@@ -33,7 +33,7 @@ header{
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 1px 3px 3px #878787;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .wrapper h1{
@@ -86,9 +86,13 @@ header{
     }
 }
 
+
+
+
+
 @media screen and (max-height:800px){
     .wrapper{
-        height: 75%;
+        height: 80%;
         overflow: auto;
     }
 }
