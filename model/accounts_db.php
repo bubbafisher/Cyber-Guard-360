@@ -2,15 +2,15 @@
 
 
 function create_account($fName, $lName, $email, $phone, $bName, $add1, $add2, 
-        $city, $state, $zip, $username, $password){
+        $city, $state, $zip, $country, $username, $password){
     
     global $db;
     $query = 'INSERT INTO accounts
             (firstName, lastName, email, phone, business, addLine1, addLine2,
-                city, state, zipcode, username, password)
+                city, state, zipcode, country, username, password)
              VALUES  
                 (:fName, :lName, :email, :phone, :bName, :add1, :add2, 
-                    :city, :state, :zip, :username, :password)';
+                    :city, :state, :zip, :country, :username, :password)';
     
     $statement = $db->prepare($query);
     $statement->bindValue(':fName', $fName);
@@ -23,6 +23,7 @@ function create_account($fName, $lName, $email, $phone, $bName, $add1, $add2,
     $statement->bindValue(':city', $city);
     $statement->bindValue(':state', $state);
     $statement->bindValue(':zip', $zip);
+    $statement->bindValue(':country', $country);
     $statement->bindValue(':username', $username);
     $statement->bindValue(':password', $password);
     

@@ -23,12 +23,14 @@ elseif ($action == 'create_account') {
     $add2  = filter_input(INPUT_POST, 'add2'  );
     $city = filter_input(INPUT_POST, 'city'  );
     $state = filter_input(INPUT_POST, 'state'  );
-    $zip = filter_input(INPUT_POST, 'country'  );
+    $zip = filter_input(INPUT_POST, 'zip');
+    $country =  filter_input(INPUT_POST, 'country'  );
     $username = filter_input(INPUT_POST, 'user'  );
     $password = filter_input(INPUT_POST, 'password'  );
     
     create_account($fName, $lName, $email, $phone, $bName, $add1,
-            $add2, $city, $state, $zip, $username, $password);
+            $add2, $city, $state, $zip, $country, $username, $password);
     
-    include '../login_page/login_page.php';
+    
+    header("Location: ../login_page/login_page.php");
 }

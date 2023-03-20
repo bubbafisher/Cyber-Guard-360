@@ -4,6 +4,10 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
               rel="stylesheet"
               integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
@@ -22,7 +26,9 @@
             
             <div id="logo">
                 
-                <img src="../images/CG360.png" alt="CyberGuard360 logo">
+                 <a href="../index.php"><img
+                        src="../images/CG360.png" 
+                        alt="CyberGuard360 logo"></a>
                 
             </div>
         </header> 
@@ -35,92 +41,120 @@
                     
                     <div class="container">
                         <div class="row">
-                            <div class="col-6">
-                                <label> First Name</label> <input type="text" name="fName">
-                
-                               <br><br>
-                                
-                                <label> Last Name</label> <input type="text" name="lName">
-                                
-                                <br><br>
-                                
-                                <label> Email</label> <input type="text" name="email">
-                                
-                                <br><br>
-                                
-                                <label> Phone #</label> <input type="text" name="phone">
-                                
-                                <br><br>
-                                
-                                <label> Business Name</label> <input type="text" name="bName">
-                                <br><br><br><br><br>
-                                
-                            
-                                
-                                <h2>Address</h2>
-                                <br>
-                                
-                                 <label> Address Line 1</label> <input type="text" name="add1">
-                                
-                                <br><br>
-                                
-                                <label> Address Line 2*</label> <input type="text" name="add2">
-                                
-                                <br><br>
-                                
-                                <label> City </label> <input type="text" name="city">
-                                
-                                <br><br>
-                                
-                                <label> State/Province</label> <input type="text" name="state">
-                                
-                                <br><br>
-                                
-                                <label> Zipcode </label> <input type="text" name="zip">
-                                
-                                <br><br>
-                                
-                                <label> Country </label> <input type="text" name="country">
-                                
-                                <br><br>
+                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                 
                                 
+                                <table>
+                                    <th>
+                                        <h4>General</h4>
+                                    </th>
+				    <th></th>
+
+                                        
+                                        <tr>
+                                            <td><label> First Name</label></td> <td><input type="text" name="fName"></td>
+                                            
+                                        </tr>
+                                            
+                                        <tr>
+                                            <td> <label> Last Name</label></td> <td><input type="text" name="lName"></td>
+                                        </tr>
+                                            
+                                        <tr>
+                                            <td><label> Email</label></td> <td><input type="text" name="email"></td>
+                                        </tr>
+                                            
+                                        <tr>
+                                            <td><label> Phone #</label></td> <td><input type="text" name="phone"></td>
+                                        </tr>
+                                            
+                                        <tr>
+                                            <td><label> Business Name</label></td> <td><input type="text" name="bName"></td>
+                                        </tr>
+                                        
+                                </table>
                                 
-                                
-                
+                                <table>
+                                    <th>
+                                        <h4>Address     </h4>
+                                    </th>
+				    <th></th>
+
+                                        
+                                        <tr>
+                                            <td><label>  Address Line 1</label></td> <td><input type="text" name="add1"></td>
+                                            
+                                        </tr>
+                                            
+                                        <tr>
+                                            <td> <label> Address Line 2*</label></td> <td> <input type="text" name="add2"></td>
+                                        </tr>
+                                            
+                                        <tr>
+                                            <td><label> City</label></td> <td><input type="text" name="city"></td>
+                                        </tr>
+                                            
+                                        <tr>
+                                            <td><label> State/Province</label></td> <td><input type="text" name="state"></td>
+                                        </tr>
+                                            
+                                        <tr>
+                                            <td><label> Zipcode</label></td> <td><input type="text" name="zip"></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td><label> Country</label></td> <td><input type="text" name="country"></td>
+                                        </tr>
+                                        
+                                </table>
+
                                
+                          
+                                 
                                 
                             </div>
 
-                            <div class="col-6">
-                               <label> Username</label> <input type="text" name="user">
-                               
-                               <br><br>
-                               
-                               <label> Create Password</label>
-                               <input type="text" name="password">
-                               
-                               <br><br>
-                               
-                               <label> Re-enter Password</label>
-                               <input type="text" name="password-check">
+                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                
+                                <table>
+                                
+                                    <th>
+                                        <h4>Account</h4>
+                                    </th>
+                                    <th></th>
+                                 
+                                    <tr>
+                                        <td><label> Username</label></td> <td><input type="text" name="user"></td>
+                                    </tr>
+                                           
+                                    
+                                    <tr>
+                                            <td><label> Create Password</label></td>
+                                            <td><input type="text" name="password"></td>
+                                    </tr>
+                                          
+                                    <tr>
+                                            <td><label> Re-enter Password</label></td>
+                                            <td><input type="text" name="password-check"></td>
+                                    </tr>
+                                </table>
                             </div>
-
-                        </div>
-                    </div>
+                       </div>
                 
-                
-                <input type="hidden" name="action" value="create_account">
+                </div>
+                   
+                   
+                   
+                   <input type="hidden" name="action" value="create_account">
                     <input type="submit" value="Create Account">
                         </form>
-                
-                
+                   
                 
             </div>
    
         </main>
-    </body>
-</html>
+    
 
 
 
+<?php include "../views/footer.php";

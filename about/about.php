@@ -21,7 +21,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
             
             <div id="logo">
                 
-                <img src="../images/CG360.png" alt="CyberGuard360 logo">
+                 <a href="../index.php"><img
+                        src="../images/CG360.png" 
+                        alt="CyberGuard360 logo"></a>
                 
             </div>
             
@@ -68,5 +70,4 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
             
         </div>
         
-    </body>
-</html>
+   <?php include '../views/footer.php';
