@@ -34,10 +34,10 @@
                 <div class="container">
                     <div class="row justify-content-between">
                         <div class="col-2">
-                            <a href="quiz_start.php" class="btn btn-secondary">← Previous</a>
+                            <a href="quiz_start.php" class="btn btn-secondary">Previous</a>
                         </div>
                         <div class="col-2">
-                            <a href="quiz_end.php" class="btn btn-secondary">Next →</a>
+                            <a href="quiz_end.php" class="btn btn-secondary">Next</a>
                         </div>
                     </div>
                     <br>
