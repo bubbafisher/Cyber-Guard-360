@@ -27,9 +27,10 @@ elseif ($action == 'create_account') {
     $country =  filter_input(INPUT_POST, 'country'  );
     $username = filter_input(INPUT_POST, 'user'  );
     $password = filter_input(INPUT_POST, 'password'  );
+    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
     
     create_account($fName, $lName, $email, $phone, $bName, $add1,
-            $add2, $city, $state, $zip, $country, $username, $password);
+            $add2, $city, $state, $zip, $country, $username, $hashedPassword);
     
     
     header("Location: ../login_page/login_page.php");

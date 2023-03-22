@@ -16,6 +16,7 @@ elseif ($action == 'login'){
     session_start();    //starts user session
     $email = filter_input(INPUT_POST, 'email'); //gets email input
     $password = filter_input(INPUT_POST, 'password'); //gets input password
+    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
     if ($email == ""){
         echo 'Incorrect Email or Password ';
      
@@ -25,7 +26,7 @@ elseif ($action == 'login'){
     $_SESSION['password'] = $email; //stores email in session data
     
     
-    $account = login_cust($email, $password);
+    $account = login_cust($email, $hashedPassword);
     
     
     include ('../logged_in/logged_in.php');
