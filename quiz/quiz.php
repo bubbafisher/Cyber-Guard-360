@@ -45,6 +45,9 @@
                         <div class="row">
                             <div class="col">
                                 <h4><?php echo $question['question']; ?></h4>
+                                <input type="hidden" name="question_id" value="<?php echo $question['id'];?>">
+                                <input type="hidden" name="yes_id" value="<?php echo $question['yes_id'];?>">
+                                <input type="hidden" name="no_id" value="<?php echo $question['no_id'];?>">
                             </div>
                         </div>
                         <br>
@@ -52,18 +55,18 @@
                             <div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
                                 <div class="col-2">
                                     <label class="btn btn-primary btn-lg">
-                                        <input type="radio" name="options" id="option1" autocomplete="off"> Yes
+                                        <input type="radio" name="answer" id="yes" autocomplete="off"> Yes
                                     </label>
                                 </div>
                                 <div class="col-2">
                                     <label class="btn btn-primary btn-lg">
-                                        <input type="radio" name="options" id="option2" autocomplete="off"> No
+                                        <input type="radio" name="answer" id="no" autocomplete="off"> No
                                 </label>
                                 </div>
                                 <?php if($question[has_NA]) : ?>
                                 <div class="col-2">
                                     <label class="btn btn-primary btn-lg">
-                                        <input type="radio" name="options" id="option3" autocomplete="off"> N/A
+                                        <input type="radio" name="answer" id="na" autocomplete="off"> N/A
                                     </label>
                                 </div>
                                 <?php endif;?>
