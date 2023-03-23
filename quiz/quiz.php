@@ -59,11 +59,13 @@
                                     <input type="radio" name="options" id="option2" autocomplete="off"> No
                               </label>
                             </div>
+                            <?php if($question[has_NA]) : ?>
                             <div class="col-2">
                                 <label class="btn btn-primary btn-lg disabled">
                                     <input type="radio" name="options" id="option3" autocomplete="off" disabled> N/A
                                   </label>
                             </div>
+                            <?php endif;?>
                             
                         </div>
                     </div>
