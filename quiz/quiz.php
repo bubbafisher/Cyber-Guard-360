@@ -43,7 +43,7 @@
                     <br>
                     <div class="row">
                         <div class="col">
-                            <h4>Are processes and mechanisms for installing and maintaining network security controls defined and understood?</h4>
+                            <h4><?php echo $question['question']; ?></h4>
                         </div>
                     </div>
                     <br>
