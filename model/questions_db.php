@@ -7,7 +7,7 @@ function get_question($id){
               WHERE id = :id';
     
     $statement = $db->prepare($query);
-    $statement->bindValue(':id', $email);
+    $statement->bindValue(':id', $id);
     $statement->execute();
     $customer = $statement->fetch();
     $statement->closeCursor();
