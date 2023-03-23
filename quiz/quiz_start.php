@@ -43,8 +43,7 @@
                             <input type="hidden" name="action" value="next">
                             <input type="hidden" name="questionID" value="1">
                             <input type="submit" class="btn btn-primary btn-lg" value="Begin">
-                        </form> 
-                        <a href="quiz.php" class="btn btn-primary btn-lg">Begin</a>
+                        </form>
                         </div>
                     </div>
                 </div>
