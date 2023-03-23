@@ -32,43 +32,45 @@
                 <h1>Compliance Quiz</h1>
                     
                 <div class="container">
-                    <div class="row justify-content-between">
-                        <div class="col-2">
-                            <a href="quiz_start.php" class="btn btn-secondary">Previous</a>
-                        </div>
-                        <div class="col-2">
-                            <a href="quiz_end.php" class="btn btn-secondary">Next</a>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="col">
-                            <h4><?php echo $question['question']; ?></h4>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row justify-content-center">
-                        <div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
+                    <form action="." method="post">
+                        <div class="row justify-content-between">
                             <div class="col-2">
-                                <label class="btn btn-primary btn-lg">
-                                    <input type="radio" name="options" id="option1" autocomplete="off"> Yes
-                                  </label>
+                                <a href="quiz_start.php" class="btn btn-secondary">← Previous</a>
                             </div>
                             <div class="col-2">
-                                <label class="btn btn-primary btn-lg">
-                                    <input type="radio" name="options" id="option2" autocomplete="off"> No
-                              </label>
+                                <a href="quiz_end.php" class="btn btn-secondary">Next →</a>
                             </div>
-                            <?php if($question[has_NA]) : ?>
-                            <div class="col-2">
-                                <label class="btn btn-primary btn-lg disabled">
-                                    <input type="radio" name="options" id="option3" autocomplete="off" disabled> N/A
-                                  </label>
-                            </div>
-                            <?php endif;?>
-                            
                         </div>
-                    </div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <h4><?php echo $question['question']; ?></h4>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row justify-content-center">
+                            <div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
+                                <div class="col-2">
+                                    <label class="btn btn-primary btn-lg">
+                                        <input type="radio" name="options" id="option1" autocomplete="off"> Yes
+                                    </label>
+                                </div>
+                                <div class="col-2">
+                                    <label class="btn btn-primary btn-lg">
+                                        <input type="radio" name="options" id="option2" autocomplete="off"> No
+                                </label>
+                                </div>
+                                <?php if($question[has_NA]) : ?>
+                                <div class="col-2">
+                                    <label class="btn btn-primary btn-lg">
+                                        <input type="radio" name="options" id="option3" autocomplete="off"> N/A
+                                    </label>
+                                </div>
+                                <?php endif;?>
+                                
+                            </div>
+                        </div>
+                    </form>
                     <br>
                     <div class="row justify-content-center">
                         <div class="col-6">
