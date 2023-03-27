@@ -1,0 +1,63 @@
+<?php
+$sql = "CREATE TABLE ACCOUNTS (
+        Account_ID INT(6) NOT NULL,
+        fName VARCHAR(30) NOT NULL,
+        lNname VARCHAR(30) NOT NULL,
+        email VARCHAR(50) NOT NULL,
+        address_1 VARCHAR(50) NOT NULL,
+        address_2 VARCHAR(50) NOT NULL,
+        city VARCHAR(50) NOT NULL,
+        zip VARCHAR(50) NOT NULL,
+        Size INT(5) NOT NULL,
+        Annual_Rev INT(10) NOT NULL,
+        Num_Tran INT(10) NOT NULL,
+        Score INT(3),
+        PRIMARY KEY (Account_ID),
+        FOREIGN KEY (Score) REFERENCES PROGRESS(Score)
+        );
+
+        CREATE TABLE SURVEY (
+        Survey_ID INT(6),
+        Account_ID INT(6),
+        Question_ID INT(6),
+        Answer_ID INT(6),
+        PRIMARY KEY (Survey_ID),
+        FOREIGN KEY (Account_ID) REFERENCES ACCOUNTS(Account_ID),
+        FOREIGN KEY (Question_ID) REFERENCES QUESTIONS(Questions_ID),
+        FOREIGN KEY (Answer_ID) REFERENCES ANSWERS(Answer_ID)
+        );
+
+        CREATE TABLE QUESTIONS(
+        Survey_ID INT(6),
+        Account_ID INT(6),
+        Question_ID INT(6),
+        Answer_ID INT(6),
+        PRIMARY KEY (Question_ID),
+        FOREIGN KEY (Account_ID) REFERENCES ACCOUNTS(Account_ID),
+        FOREIGN KEY (Survey_ID) REFERENCES SURVEY(Survey_ID),
+        FOREIGN KEY (Answer_ID) REFERENCES ANSWERS(Answer_ID)
+        );
+
+        CREATE TABLE ANSWERS(
+        Survey_ID INT(6),
+        Account_ID INT(6),
+        Question_ID INT(6),
+        Answer_ID INT(6),
+        PRIMARY KEY (Answer_ID),
+        FOREIGN KEY (Account_ID) REFERENCES ACCOUNTS(Account_ID),
+        FOREIGN KEY (Survey_ID) REFERENCES SURVEY(Survey_ID),
+        FOREIGN KEY (Question_ID) REFERENCES QUESTIONS(Questions_ID)
+        );
+
+        CREATE TABLE PROGRESS(
+        Score INT(3),
+        Survey_ID INT(6),
+        Account_ID INT(6),
+        PRIMARY KEY (SCORE),
+        FOREIGN KEY (Account_ID) REFERENCES ACCOUNTS(Account_ID),
+        FOREIGN KEY (Survey_ID) REFERENCES SURVEY(Survey_ID)
+        );
+    "
+
+?>
+
