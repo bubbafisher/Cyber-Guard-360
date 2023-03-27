@@ -1,13 +1,13 @@
 <?php
 
-function get_question($id){
+function get_question($question_id){
     global $db;
     
     $query = 'SELECT * FROM questions
-              WHERE id = :id';
+              WHERE question_id = :question_id';
     
     $statement = $db->prepare($query);
-    $statement->bindValue(':id', $id);
+    $statement->bindValue(':question_id', $question_id);
     $statement->execute();
     $customer = $statement->fetch();
     $statement->closeCursor();
