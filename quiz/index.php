@@ -16,6 +16,7 @@ switch($action)
         break;
     case 'start':
         create_survey(filter_input(INPUT_POST, 'userID'));
+        $survey_id = get_survey(filter_input(INPUT_POST, 'userID'));
         $question = get_question(filter_input(INPUT_POST, 'questionID'));
         include('quiz.php');
         break;
