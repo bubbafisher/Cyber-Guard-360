@@ -109,8 +109,8 @@
         <script>
             function checkAnswer()
             {
-                if(document.getElementById("yes").checked||document.getElementById("no").checked||document.getElementById("na").checked)
-                    document.getElementByID("answerForm").submit();
+                if(document.getElementById("yes").checked||document.getElementById("no").checked)
+                    document.getElementById("questionForm").submit();
                 else
                     alert("Please select an answer");
             }
