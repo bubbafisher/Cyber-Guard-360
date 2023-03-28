@@ -85,11 +85,8 @@
                                     Answer 'Yes' if:
                                   </div>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Network security controls, such as firewalls, cloud access controls, virtualization/container systems, or other networking technology, are in use, up to date, documented, and known to all affected users.
+                                        <li class="list-group-item"><?php echo $question['hints'];?>
                                         </li>
-                                        <li class="list-group-item">Description of roles surrounding the installation and maintenance of NSCs are documented and responsibilities have been assigned.
-                                        </li>
-                                        <li class="list-group-item">Verification that personnel understand documentation and the roles and responsibilities to which they have been assigned is obtained.</li>
                                     </ul>
                             </div>
                             <!-- <h5>Answer 'Yes' if:</h5>
