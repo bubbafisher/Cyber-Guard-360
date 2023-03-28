@@ -49,6 +49,7 @@
                                 <input type="hidden" name="question_id" value="<?php echo $question['question_id'];?>">
                                 <input type="hidden" name="yes_id" value="<?php echo $question['yes_id'];?>">
                                 <input type="hidden" name="no_id" value="<?php echo $question['no_id'];?>">
+                                <input type="hidden" name="action" value="next">
                             </div>
                         </div>
                         <br>
