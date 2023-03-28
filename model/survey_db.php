@@ -40,9 +40,9 @@ function get_survey_by_id($survey_id){
     $statement = $db->prepare($query);
     $statement->bindValue(':survey_id', $survey_id);
     $statement->execute();
-    $survey_id = $statement->fetch();
+    $survey = $statement->fetch();
     $statement->closeCursor();
 
-    return $survey_id;
+    return $survey;
 }
 
