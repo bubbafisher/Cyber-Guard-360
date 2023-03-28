@@ -32,10 +32,10 @@
                 <h1>Compliance Quiz</h1>
                     
                 <div class="container">
-                    <form action="." method="post">
+                    <form action="." method="post" id="questionForm">
                         <div class="row justify-content-between">
                             <div class="col-2">
-                                <input class="btn btn-secondary disabled" type="submit" value="← Previous">
+                                <input class="btn btn-secondary" onclick="checkAnswer()" type="button" value="← Previous">
                             </div>
                             <div class="col-2">
                                 <input class="btn btn-secondary" type="submit" value="Next →">
@@ -58,18 +58,18 @@
                             <div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
                                 <div class="col-2">
                                     <label class="btn btn-primary btn-lg">
-                                        <input type="radio" name="answer" value="yes" autocomplete="off"> Yes
+                                        <input type="radio" name="answer" id="yes" value="yes" autocomplete="off"> Yes
                                     </label>
                                 </div>
                                 <div class="col-2">
                                     <label class="btn btn-primary btn-lg">
-                                        <input type="radio" name="answer" value="no" autocomplete="off"> No
+                                        <input type="radio" name="answer" id="no" value="no" autocomplete="off"> No
                                 </label>
                                 </div>
                                 <?php if($question[has_NA]) : ?>
                                 <div class="col-2">
                                     <label class="btn btn-primary btn-lg">
-                                        <input type="radio" name="answer" id="na" autocomplete="off"> N/A
+                                        <input type="radio" name="answer" id="na" value="na" autocomplete="off"> N/A
                                     </label>
                                 </div>
                                 <?php endif;?>
@@ -106,6 +106,15 @@
             </div>
    
         </main>
+        <script>
+            function checkAnswer()
+            {
+                if(document.getElementById("yes").checked||document.getElementById("no").checked||document.getElementById("na").checked)
+                    document.getElementByID("answerForm").submit();
+                else
+                    alert("Please select an answer");
+            }
+        </script>
     </body>
 </html>
 
