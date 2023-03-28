@@ -31,3 +31,18 @@ function get_survey($account_id){
     return $survey_id;
 }
 
+function get_survey_by_id($survey_id){
+    //Return Survey ID
+    global $db;
+    $query = 'SELECT * FROM survey
+              WHERE survey_id = :survey_id';
+
+    $statement = $db->prepare($query);
+    $statement->bindValue(':survey_id', $survey_id);
+    $statement->execute();
+    $survey_id = $statement->fetch();
+    $statement->closeCursor();
+
+    return $survey_id;
+}
+
