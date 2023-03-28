@@ -35,10 +35,10 @@
                     <form action="." method="post" id="questionForm">
                         <div class="row justify-content-between">
                             <div class="col-2">
-                                <input class="btn btn-secondary" onclick="checkAnswer()" type="button" value="← Previous">
+                                <input class="btn btn-secondary disabled" onclick="checkAnswer()" type="button" value="← Previous">
                             </div>
                             <div class="col-2">
-                                <input class="btn btn-secondary" type="submit" value="Next →">
+                                <input class="btn btn-secondary" onclick="checkAnswer()" type="button" value="Next →">
                             </div>
                         </div>
                         <br>
