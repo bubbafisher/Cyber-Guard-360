@@ -26,6 +26,7 @@ switch($action)
             $survey_id = filter_input(INPUT_POST, 'survey_id');
             $question_id = filter_input(INPUT_POST, 'question_id');
             $answer = filter_input(INPUT_POST, 'answer');
+            create_answer($survey_id, $question_id, $answer);
             if(filter_input(INPUT_POST, 'answer')=='yes')
                 $question = get_question(filter_input(INPUT_POST, 'yes_id'));
             else
