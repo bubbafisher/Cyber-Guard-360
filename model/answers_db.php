@@ -3,7 +3,7 @@
 function get_answer($survey_id, $question_id){
     global $db;
     
-    $query = 'SELECT * FROM accounts
+    $query = 'SELECT * FROM answers
               WHERE survey_id = :survey_id and question_id = :question_id';
     
     $statement = $db->prepare($query);
