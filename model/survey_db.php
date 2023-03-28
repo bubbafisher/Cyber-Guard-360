@@ -12,6 +12,7 @@ function create_survey($account_id){
     $statement->bindValue(':account_id', $account_id);
     
     $statement->execute();
+    $statement->closeCursor();
     //Return Survey ID
     $query = 'SELECT * FROM survey
               WHERE account_id = :account_id
@@ -22,7 +23,7 @@ function create_survey($account_id){
     $statement->execute();
     $survey_id = $statement->fetch();
     $statement->closeCursor();
-    
+
     return $survey_id;
 }
 
