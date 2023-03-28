@@ -23,10 +23,11 @@ switch($action)
     case 'next':
         if(filter_input(INPUT_POST, 'answer') != null)
         {
-            $survey_id = get_survey_by_id(filter_input(INPUT_POST, 'survey_id'));
+            $survey_id = filter_input(INPUT_POST, 'survey_id');
             $question_id = filter_input(INPUT_POST, 'question_id');
             $answer = filter_input(INPUT_POST, 'answer');
             create_answer($survey_id, $question_id, $answer); //Post answer to DB
+            $survey_id = get_survey_by_id(filter_input(INPUT_POST, 'survey_id'));
             if(filter_input(INPUT_POST, 'answer')=='yes') //Check to see if answer is yes
             {
                 if(filter_input(INPUT_POST, 'yes_id')==-1) //Check to see if yes value is -1
