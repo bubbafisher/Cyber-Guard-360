@@ -23,7 +23,7 @@ switch($action)
     case 'next':
         if(filter_input(INPUT_POST, 'answer') != null)
         {
-            $survey_id = filter_input(INPUT_POST, 'survey_id')['survey_id'];
+            $survey_id = filter_input(INPUT_POST, 'survey_id');
             $question_id = filter_input(INPUT_POST, 'question_id');
             $answer = filter_input(INPUT_POST, 'answer');
             create_answer($survey_id, $question_id, $answer); //Post answer to DB
