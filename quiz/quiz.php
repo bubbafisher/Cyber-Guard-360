@@ -35,16 +35,17 @@
                     <form action="." method="post">
                         <div class="row justify-content-between">
                             <div class="col-2">
-                                <a href="quiz_start.php" class="btn btn-secondary">← Previous</a>
+                                <input class="btn btn-secondary disabled" type="submit" value="← Previous">
                             </div>
                             <div class="col-2">
-                                <a href="quiz_end.php" class="btn btn-secondary">Next →</a>
+                                <input class="btn btn-secondary" type="submit" value="Next →">
                             </div>
                         </div>
                         <br>
                         <div class="row">
                             <div class="col">
                                 <h4><?php echo $question['question']; ?></h4>
+                                <input type="hidden" name="survey_id" value="<?php echo $survey_id['survey_id'];?>">
                                 <input type="hidden" name="question_id" value="<?php echo $question['question_id'];?>">
                                 <input type="hidden" name="yes_id" value="<?php echo $question['yes_id'];?>">
                                 <input type="hidden" name="no_id" value="<?php echo $question['no_id'];?>">
