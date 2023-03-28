@@ -26,15 +26,24 @@ switch($action)
             $survey_id = filter_input(INPUT_POST, 'survey_id');
             $question_id = filter_input(INPUT_POST, 'question_id');
             $answer = filter_input(INPUT_POST, 'answer');
-            create_answer($survey_id, $question_id, $answer);
+            create_answer($survey_id, $question_id, $answer); //Post answer to DB
             if(filter_input(INPUT_POST, 'answer')=='yes')
-                $question = get_question(filter_input(INPUT_POST, 'yes_id'));
+            {
+                $question = get_question(filter_input(INPUT_POST, 'yes_id')); //Get next question
+                if($question!=null) //Check to see if question exists, if not, go to quiz end
+                        include('quiz.php');
+                    else
+                        include('quiz_end.php');
+            }
             else
-                $question = get_question(filter_input(INPUT_POST, 'no_id'));
+                if(filter_input(INPUT_POST, 'no_id')==-1) //Check to see if no value is -1
+                {
+                    $question = get_guideline_question(filter_input(INPUT_POST, 'guideline')+1); //Get next guideline's question and see if its valid
+                    if($question!=null)
+                        include('quiz.php');
+                    else
+                        include('quiz_end.php');
+                }
         }
-        include('quiz.php');
-        break;
-    case 'end':
-        include('quiz_end.php');
         break;
 }
