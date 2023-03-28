@@ -57,12 +57,12 @@
                             <div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
                                 <div class="col-2">
                                     <label class="btn btn-primary btn-lg">
-                                        <input type="radio" name="answer" id="yes" autocomplete="off"> Yes
+                                        <input type="radio" name="answer" value="yes" autocomplete="off"> Yes
                                     </label>
                                 </div>
                                 <div class="col-2">
                                     <label class="btn btn-primary btn-lg">
-                                        <input type="radio" name="answer" id="no" autocomplete="off"> No
+                                        <input type="radio" name="answer" value="no" autocomplete="off"> No
                                 </label>
                                 </div>
                                 <?php if($question[has_NA]) : ?>
