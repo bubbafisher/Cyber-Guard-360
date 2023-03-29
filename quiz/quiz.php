@@ -35,10 +35,10 @@
                     <form action="." method="post" id="questionForm">
                         <div class="row justify-content-between">
                             <div class="col-2">
-                                <input class="btn btn-secondary disabled" onclick="checkAnswer()" type="button" value="← Previous">
+                                <input class="btn btn-secondary disabled" onclick="checkAnswer()" type="button" name="action" value="← Previous">
                             </div>
                             <div class="col-2">
-                                <input class="btn btn-secondary" onclick="checkAnswer()" type="button" value="Next →">
+                                <input class="btn btn-secondary" onclick="checkAnswer()" type="button" name="action" value="Next →">
                             </div>
                         </div>
                         <br>
@@ -50,7 +50,7 @@
                                 <input type="hidden" name="question_id" value="<?php echo $question['question_id'];?>">
                                 <input type="hidden" name="yes_id" value="<?php echo $question['yes_id'];?>">
                                 <input type="hidden" name="no_id" value="<?php echo $question['no_id'];?>">
-                                <input type="hidden" name="action" value="next">
+                                <!-- <input type="hidden" name="action" value="next"> -->
                             </div>
                         </div>
                         <br>
