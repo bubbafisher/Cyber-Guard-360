@@ -51,3 +51,18 @@ function get_last_question($survey_id)
     
     return $question;
 }
+
+function change_answer($survey_id, $question_id, $answer){
+    
+    global $db;
+    $query = 'UPDATE answers SET answer = :answer WHERE survey_id=:survey_id AND question_id=:question_id';
+    
+    $statement = $db->prepare($query);
+    $statement->bindValue(':survey_id', $survey_id);
+    $statement->bindValue(':question_id', $question_id);
+    $statement->bindValue(':answer', $answer);
+    
+    $statement->execute();
+    $statement->closeCursor();
+     
+}
