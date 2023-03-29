@@ -38,7 +38,7 @@
                                 <button class="btn btn-secondary" id="backBtn" type="submit" name="action" value="back">← Previous</button>
                             </div>
                             <div class="col-2">
-                                <button class="btn btn-secondary" onclick="checkAnswer()" name="action" value="next">Next →</button> 
+                                <button class="btn btn-secondary disabled" disabled id="nextBtn" type="submit" name="action" value="next">Next →</button> 
                             </div>
                         </div>
                         <br>
@@ -57,18 +57,18 @@
                         <div class="row justify-content-center">
                             <div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
                                 <div class="col-2">
-                                    <label class="btn btn-primary btn-lg">
-                                        <input type="radio" name="answer" id="yes" value="yes" autocomplete="off"> Yes
+                                    <label class="btn btn-outline-primary btn-lg">
+                                        <input type="radio" name="answer" id="yes" value="yes"  onclick="changeButtonColor()" autocomplete="off"> Yes
                                     </label>
                                 </div>
                                 <div class="col-2">
-                                    <label class="btn btn-primary btn-lg">
-                                        <input type="radio" name="answer" id="no" value="no" autocomplete="off"> No
+                                    <label class="btn btn-outline-primary btn-lg">
+                                        <input type="radio" name="answer" id="no" value="no" onclick="changeButtonColor()" autocomplete="off"> No
                                 </label>
                                 </div>
                                 <?php if($question[has_NA]) : ?>
                                 <div class="col-2">
-                                    <label class="btn btn-primary btn-lg">
+                                    <label class="btn btn-outline-primary btn-lg">
                                         <input type="radio" name="answer" id="na" value="na" autocomplete="off"> N/A
                                     </label>
                                 </div>
@@ -107,12 +107,23 @@
    
         </main>
         <script>
-            function checkAnswer()
+            function changeButtonColor()
             {
-                if(document.getElementById("yes").checked||document.getElementById("no").checked)
-                    document.getElementById("questionForm").submit();
+                var yesBtn = document.getElementById("yes");
+                var noBtn = document.getElementById("no");
+                var nextBtn = document.getElementById("nextBtn");
+                if(document.getElementById("yes").checked)
+                {
+                    yesBtn.classList.add("btn-primary");
+                    noBtn.classList.remove("btn-primary");
+                }
                 else
-                    alert("Please select an answer");
+                {
+                    yesBtn.classList.remove("btn-primary");
+                    noBtn.classList.add("btn-primary");
+                }
+                nextBtn.disabled=false;
+                nextBtn.classList.remove("disabled");
             }
 
             function checkQuestion()
