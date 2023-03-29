@@ -20,13 +20,21 @@ switch($action)
         $question = get_question(filter_input(INPUT_POST, 'questionID'));
         include('quiz.php');
         break;
+    case 'back':
+        $survey_id = get_survey_by_id(filter_input(INPUT_POST, 'survey_id'));
+        $question = get_question(get_last_question($survey_id));
+        include('quiz.php');
+        break;
     case 'next':
         if(filter_input(INPUT_POST, 'answer') != null)
         {
             $survey_id = filter_input(INPUT_POST, 'survey_id');
             $question_id = filter_input(INPUT_POST, 'question_id');
             $answer = filter_input(INPUT_POST, 'answer');
-            create_answer($survey_id, $question_id, $answer); //Post answer to DB
+            if(empty(get_answer($survey_id, $question_id))) //Check if question has been answered yet
+                create_answer($survey_id, $question_id, $answer); //Post answer to DB
+            else
+                change_answer($survey_id, $question_id, $answer); //Change answer on DB
             $survey_id = get_survey_by_id(filter_input(INPUT_POST, 'survey_id'));
             if(filter_input(INPUT_POST, 'answer')=='yes') //Check to see if answer is yes
             {
@@ -53,6 +61,11 @@ switch($action)
                         include('quiz.php');
                     else
                         include('quiz_end.php');
+                }
+                else
+                {
+                    $question = get_question(filter_input(INPUT_POST, 'no_id')); //Get next question
+                    include('quiz.php');
                 }
             }
         }

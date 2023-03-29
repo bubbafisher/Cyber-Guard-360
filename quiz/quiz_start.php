@@ -41,7 +41,7 @@
                         <div class="col">
                         <form action="." method="post"> 
                             <input type="hidden" name="action" value="start">
-                            <input type="hidden" name="questionID" value="1">
+                            <input type="hidden" name="questionID" value="0">
                             <input type="hidden" name="userID" value="2">
                             <input type="submit" class="btn btn-primary btn-lg" value="Begin">
                         </form>
