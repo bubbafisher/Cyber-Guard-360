@@ -57,13 +57,13 @@
                         <div class="row justify-content-center">
                             <div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
                                 <div class="col-2">
-                                    <label class="btn btn-outline-primary btn-lg">
-                                        <input type="radio" name="answer" id="yes" value="yes"  onclick="changeButtonColor()" autocomplete="off"> Yes
+                                    <label class="btn btn-outline-primary btn-lg" id="yes">
+                                        <input type="radio" name="answer" value="yes"  onclick="changeButtonColor()" autocomplete="off"> Yes
                                     </label>
                                 </div>
                                 <div class="col-2">
-                                    <label class="btn btn-outline-primary btn-lg">
-                                        <input type="radio" name="answer" id="no" value="no" onclick="changeButtonColor()" autocomplete="off"> No
+                                    <label class="btn btn-outline-primary btn-lg" id="no">
+                                        <input type="radio" name="answer" value="no" onclick="changeButtonColor()" autocomplete="off"> No
                                 </label>
                                 </div>
                                 <?php if($question[has_NA]) : ?>
