@@ -58,12 +58,12 @@
                             <div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
                                 <div class="col-2">
                                     <label class="btn btn-outline-primary btn-lg" id="yes">
-                                        <input type="radio" name="answer" value="yes"  onclick="changeButtonColor()" autocomplete="off"> Yes
+                                        <input type="radio" name="answer" value="yes" id="yesBtn" onclick="changeButtonColor()" autocomplete="off"> Yes
                                     </label>
                                 </div>
                                 <div class="col-2">
                                     <label class="btn btn-outline-primary btn-lg" id="no">
-                                        <input type="radio" name="answer" value="no" onclick="changeButtonColor()" autocomplete="off"> No
+                                        <input type="radio" name="answer" value="no" id="noBtn" onclick="changeButtonColor()" autocomplete="off"> No
                                 </label>
                                 </div>
                                 <?php if($question[has_NA]) : ?>
@@ -112,7 +112,7 @@
                 var yesBtn = document.getElementById("yes");
                 var noBtn = document.getElementById("no");
                 var nextBtn = document.getElementById("nextBtn");
-                if(document.getElementById("yes").checked)
+                if(document.getElementById("yesBtn").checked)
                 {
                     yesBtn.classList.add("btn-primary");
                     yesBtn.classList.remove("btn-outline-primary");
