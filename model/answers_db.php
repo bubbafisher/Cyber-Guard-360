@@ -13,7 +13,7 @@ function get_answer($survey_id, $question_id){
     $answer = $statement->fetch();
     $statement->closeCursor();
     
-    return $customer;
+    return $answer;
     
 } 
 
