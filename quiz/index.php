@@ -54,6 +54,11 @@ switch($action)
                     else
                         include('quiz_end.php');
                 }
+                else
+                {
+                    $question = get_question(filter_input(INPUT_POST, 'no_id')); //Get next question
+                    include('quiz.php');
+                }
             }
         }
         break;
