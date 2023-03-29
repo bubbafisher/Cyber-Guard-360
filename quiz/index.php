@@ -21,7 +21,7 @@ switch($action)
         include('quiz.php');
         break;
     case 'back':
-        $survey_id = filter_input(INPUT_POST, 'survey_id');
+        $survey_id = get_survey_by_id(filter_input(INPUT_POST, 'survey_id'));
         $question = get_question(get_last_question($survey_id));
         include('quiz.php');
     case 'next':
