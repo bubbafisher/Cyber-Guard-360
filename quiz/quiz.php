@@ -38,7 +38,7 @@
                                 <input class="btn btn-secondary disabled" onclick="checkAnswer()" type="button" name="action" value="← Previous">
                             </div>
                             <div class="col-2">
-                                <input class="btn btn-secondary" onclick="checkAnswer()" type="button" name="action" value="Next →">
+                                <button class="btn btn-secondary" onclick="checkAnswer()" name="action" value="next">Next →</button> 
                             </div>
                         </div>
                         <br>
