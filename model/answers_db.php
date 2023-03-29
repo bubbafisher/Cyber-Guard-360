@@ -35,3 +35,19 @@ function create_answer($survey_id, $question_id, $answer){
      
 }
 
+function get_last_question($survey_id)
+{
+    global $db;
+    
+    $query = 'SELECT * FROM answers
+              WHERE survey_id = :survey_id
+              ORDER BY question_id DESC';
+    
+    $statement = $db->prepare($query);
+    $statement->bindValue(':survey_id', $survey_id);
+    $statement->execute();
+    $question = $statement->fetch();
+    $statement->closeCursor();
+    
+    return $question;
+}

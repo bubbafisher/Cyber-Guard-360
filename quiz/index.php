@@ -20,6 +20,10 @@ switch($action)
         $question = get_question(filter_input(INPUT_POST, 'questionID'));
         include('quiz.php');
         break;
+    case 'back':
+        $survey_id = filter_input(INPUT_POST, 'survey_id');
+        $question = get_last_question(filter_input(INPUT_POST, 'survey_id'));
+        include('quiz.php');
     case 'next':
         if(filter_input(INPUT_POST, 'answer') != null)
         {
