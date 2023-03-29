@@ -21,6 +21,27 @@
         
     </head>
     
+    <script>
+        function verifyPassword(){
+            var pass = document.getElementById("pass").value;
+            
+            if(pass === ""){
+                document.getElementById("message").innerHTML = "**Input Password";
+                return false;
+            }
+            
+            if(pass.length <= 8){
+                document.getElementById("message").innerHTML = "Password must have at least 8 characters";
+                return false;
+                
+            }else {
+            alert("Account Created");
+        }
+            
+            
+        }
+    </script>
+    
     <body>
         <header>
             
@@ -37,7 +58,7 @@
             <div class="wrapper">
                 <h1>Create Account</h1>
                 
-                <form action="." method="post">
+                <form onsubmit= "return verifyPassword()" action="." method="post">
                     
                     <div class="container">
                         <div class="row">
@@ -130,12 +151,18 @@
                                     
                                     <tr>
                                             <td><label> Create Password</label></td>
-                                            <td><input type="text" name="password"></td>
+                                            <td><input type="text" id ="pass" name="password"></td>
+                                            
                                     </tr>
+                                    
+                                    <tr>
+                                        <td><span id="message" style="color: red; font-size: 10px;"></span></td>
+                                        </tr>
                                           
                                     <tr>
                                             <td><label> Re-enter Password</label></td>
                                             <td><input type="text" name="password-check"></td>
+                                            
                                     </tr>
                                 </table>
                             </div>
