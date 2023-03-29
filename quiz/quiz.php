@@ -17,7 +17,7 @@
         
     </head>
     
-    <body>
+    <body onload="checkQuestion()">
         <header>
             
             <div id="logo">
@@ -35,7 +35,7 @@
                     <form action="." method="post" id="questionForm">
                         <div class="row justify-content-between">
                             <div class="col-2">
-                                <button class="btn btn-secondary" type="submit" name="action" value="back">← Previous</button>
+                                <button class="btn btn-secondary" id="backBtn" type="submit" name="action" value="back">← Previous</button>
                             </div>
                             <div class="col-2">
                                 <button class="btn btn-secondary" onclick="checkAnswer()" name="action" value="next">Next →</button> 
@@ -47,7 +47,7 @@
                                 <h4><?php echo $question['question']; ?></h4>
                                 <input type="hidden" name="survey_id" value="<?php echo $survey_id['survey_id'];?>">
                                 <input type="hidden" name="guideline" value="<?php echo $question['guideline'];?>">
-                                <input type="hidden" name="question_id" value="<?php echo $question['question_id'];?>">
+                                <input type="hidden" id="question_id"name="question_id" value="<?php echo $question['question_id'];?>">
                                 <input type="hidden" name="yes_id" value="<?php echo $question['yes_id'];?>">
                                 <input type="hidden" name="no_id" value="<?php echo $question['no_id'];?>">
                                 <!-- <input type="hidden" name="action" value="next"> -->
@@ -113,6 +113,17 @@
                     document.getElementById("questionForm").submit();
                 else
                     alert("Please select an answer");
+            }
+
+            function checkQuestion()
+            {
+                if(document.getElementById("question_id").value==0)
+                {
+                    var button = document.getElementById("backBtn");
+                    button.disabled = true;
+                    button.classList.add("disabled");
+                }
+                    
             }
         </script>
     </body>
