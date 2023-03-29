@@ -30,7 +30,7 @@ switch($action)
             $survey_id = filter_input(INPUT_POST, 'survey_id');
             $question_id = filter_input(INPUT_POST, 'question_id');
             $answer = filter_input(INPUT_POST, 'answer');
-            if(get_answer($survey_id, $question_id)==null) //Check if question has been answered yet
+            if(empty(get_answer($survey_id, $question_id))) //Check if question has been answered yet
                 create_answer($survey_id, $question_id, $answer); //Post answer to DB
             else
                 change_answer($survey_id, $question_id, $answer); //Change answer on DB
