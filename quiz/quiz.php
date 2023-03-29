@@ -115,11 +115,15 @@
                 if(document.getElementById("yes").checked)
                 {
                     yesBtn.classList.add("btn-primary");
+                    yesBtn.classList.remove("btn-outline-primary");
                     noBtn.classList.remove("btn-primary");
+                    noBtn.classList.add("btn-outline-primary");
                 }
                 else
                 {
                     yesBtn.classList.remove("btn-primary");
+                    yesBtn.classList.add("btn-outline-primary");
+                    noBtn.classList.remove("btn-outline-primary");
                     noBtn.classList.add("btn-primary");
                 }
                 nextBtn.disabled=false;
