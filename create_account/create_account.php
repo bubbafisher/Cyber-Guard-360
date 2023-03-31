@@ -22,20 +22,45 @@
     </head>
     
     <script>
-        function verifyPassword(){
+        
+        
+        function verifyInput(){
             var pass = document.getElementById("pass").value;
-            
-            if(pass === ""){
+            var fName = document.getElementById("fName").value;
+            var lName = document.getElementById("lName").value;
+            var email = document.getElementById("email").value;
+            var add1 = document.getElementById("add1").value;
+            var city = document.getElementById("city").value;
+            var state = document.getElementById("state").value;
+            var zip = document.getElementById("zip").value;
+            var country = document.getElementById("country").value;
+             
+        
+            if(fName === "" || lName === "" || email === "" || add1 === ""
+                    city === "" ||  state === "" || zip === "" ||
+                            country === "" ){
+                         
+                          document.getElementById("message").innerHTML = "Missing Required Inputs";
+                           return false;
+                            }
+                         
+  
+                           
+            else if(pass === ""){
                 document.getElementById("message").innerHTML = "**Input Password";
                 return false;
             }
             
-            if(pass.length <= 8){
+            else if(pass.length <= 8){
                 document.getElementById("message").innerHTML = "Password must have at least 8 characters";
-                return false;
                 
-            }else {
-            alert("Account Created");
+                    return false;
+            }
+            
+                
+            else {
+                document.getElementById("message").innerHTML = "";
+                return true;
         }
             
             
@@ -58,7 +83,7 @@
             <div class="wrapper">
                 <h1>Create Account</h1>
                 
-                <form onsubmit= "return verifyPassword()" action="." method="post">
+                <form   action="." method="post">
                     
                     <div class="container">
                         <div class="row">
@@ -73,24 +98,24 @@
 
                                         
                                         <tr>
-                                            <td><label> First Name</label></td> <td><input type="text" name="fName"></td>
+                                            <td><label> First Name *</label></td> <td><input type="text" id="fName" name="fName" ></td>
                                             
                                         </tr>
                                             
                                         <tr>
-                                            <td> <label> Last Name</label></td> <td><input type="text" name="lName"></td>
+                                            <td> <label> Last Name *</label></td> <td><input type="text" id="lName" name="lName" ></td>
                                         </tr>
                                             
                                         <tr>
-                                            <td><label> Email</label></td> <td><input type="text" name="email"></td>
+                                            <td><label> Email *</label></td> <td><input type="text" id="email" name="email" ></td>
                                         </tr>
                                             
                                         <tr>
-                                            <td><label> Phone #</label></td> <td><input type="text" name="phone"></td>
+                                            <td><label> Phone </label></td> <td><input type="text" name="phone" ></td>
                                         </tr>
                                             
                                         <tr>
-                                            <td><label> Business Name</label></td> <td><input type="text" name="bName"></td>
+                                            <td><label> Business Name</label></td> <td><input type="text" name="bName" "></td>
                                         </tr>
                                         
                                 </table>
@@ -103,28 +128,28 @@
 
                                         
                                         <tr>
-                                            <td><label>  Address Line 1</label></td> <td><input type="text" name="add1"></td>
+                                            <td><label>  Address Line 1 *</label></td> <td><input type="text" id="add1" name="add1" ></td>
                                             
                                         </tr>
                                             
                                         <tr>
-                                            <td> <label> Address Line 2*</label></td> <td> <input type="text" name="add2"></td>
+                                            <td> <label> Address Line 2</label></td> <td> <input type="text" name="add2"></td>
                                         </tr>
                                             
                                         <tr>
-                                            <td><label> City</label></td> <td><input type="text" name="city"></td>
+                                            <td><label> City *</label></td> <td><input type="text" id="city" name="city" ></td>
                                         </tr>
                                             
                                         <tr>
-                                            <td><label> State/Province</label></td> <td><input type="text" name="state"></td>
+                                            <td><label> State/Province *</label></td> <td><input type="text" id="state" name="state" ></td>
                                         </tr>
                                             
                                         <tr>
-                                            <td><label> Zipcode</label></td> <td><input type="text" name="zip"></td>
+                                            <td><label> Zipcode *</label></td> <td><input type="text" id="zip" name="zip" ></td>
                                         </tr>
                                         
                                         <tr>
-                                            <td><label> Country</label></td> <td><input type="text" name="country"></td>
+                                            <td><label> Country *</label></td> <td><input type="text" id="country" name="country" ></td>
                                         </tr>
                                         
                                 </table>
@@ -145,26 +170,24 @@
                                     <th></th>
                                  
                                     <tr>
-                                        <td><label> Username</label></td> <td><input type="text" name="user"></td>
+                                        <td><label> Username *</label></td> <td><input type="text" name="user"></td>
                                     </tr>
                                            
                                     
                                     <tr>
-                                            <td><label> Create Password</label></td>
-                                            <td><input type="text" id ="pass" name="password"></td>
+                                            <td><label> Create Password *</label></td>
+                                            <td><input type="text" id ="pass" name="password" onkeyup = "verifyInput()" ></td>
                                             
                                     </tr>
                                     
-                                    <tr>
-                                        <td><span id="message" style="color: red; font-size: 10px;"></span></td>
-                                        </tr>
-                                          
-                                    <tr>
-                                            <td><label> Re-enter Password</label></td>
+                                   
+                                            <td><label> Re-enter Password *</label></td>
                                             <td><input type="text" name="password-check"></td>
                                             
                                     </tr>
                                 </table>
+                                <span id="message" style="color: red; font-size: 12px;"></span>
+                                
                             </div>
                        </div>
                 
@@ -173,7 +196,7 @@
                    
                    
                    <input type="hidden" name="action" value="create_account">
-                    <input type="submit" value="Create Account">
+                    <input type="submit" value="Create Account" onclick = "return verifyInput()">
                         </form>
                    
                 
