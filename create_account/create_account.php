@@ -34,37 +34,69 @@
             var state = document.getElementById("state").value;
             var zip = document.getElementById("zip").value;
             var country = document.getElementById("country").value;
+            var user = document.getElementById("user").value;
              
         
-            if(fName === "" || lName === "" || email === "" || add1 === ""
+            if(fName === "" || lName === "" || email === "" || add1 === "" ||
                     city === "" ||  state === "" || zip === "" ||
-                            country === "" ){
+                            country === "" || user === "" ){
                          
-                          document.getElementById("message").innerHTML = "Missing Required Inputs";
+                          document.getElementById("message2").innerHTML = "Missing Required Inputs";
                            return false;
+                            }else{
+                                document.getElementById("message2").innerHTML = "";
                             }
                          
   
                            
-            else if(pass === ""){
+            if(pass === ""){
                 document.getElementById("message").innerHTML = "**Input Password";
                 return false;
+            }else{
+                document.getElementById("message2").innerHTML = "";
+                
             }
             
-            else if(pass.length <= 8){
+            if(pass.length <= 8){
                 document.getElementById("message").innerHTML = "Password must have at least 8 characters";
                 
                     return false;
+            }else {
+                document.getElementById("message").innerHTML = "";
+               
+                return true;  
+        }
+    }
+        
+        function matchPass(){
+            var pass1 = document.getElementById("pass").value;
+            var pass2 = document.getElementById("pass2").value;
+            
+            console.log(pass1);
+            
+            if (pass1 !== pass2 ){
+                document.getElementById("message3").innerHTML = "passwords do not match";
+                return false;
+                
+                
+            }else{
+                 document.getElementById("message3").innerHTML = "";
+                 return true;
             }
             
-                
-            else {
-                document.getElementById("message").innerHTML = "";
+            
+            
+        }
+         
+        function validateForm(){
+            if (verifyInput() && matchPass()){
                 return true;
+            }else{
+                return false;
+            }
         }
             
-            
-        }
+        
     </script>
     
     <body>
@@ -98,16 +130,16 @@
 
                                         
                                         <tr>
-                                            <td><label> First Name *</label></td> <td><input type="text" id="fName" name="fName" ></td>
+                                            <td><label> First Name *</label></td> <td><input type="text" id="fName" name="fName" onkeyup = "verifyInput()" ></td>
                                             
                                         </tr>
                                             
                                         <tr>
-                                            <td> <label> Last Name *</label></td> <td><input type="text" id="lName" name="lName" ></td>
+                                            <td> <label> Last Name *</label></td> <td><input type="text" id="lName" name="lName" onkeyup = "verifyInput()" > </td>
                                         </tr>
                                             
                                         <tr>
-                                            <td><label> Email *</label></td> <td><input type="text" id="email" name="email" ></td>
+                                            <td><label> Email *</label></td> <td><input type="text" id="email" name="email" onkeyup = "verifyInput()" > </td>
                                         </tr>
                                             
                                         <tr>
@@ -128,28 +160,28 @@
 
                                         
                                         <tr>
-                                            <td><label>  Address Line 1 *</label></td> <td><input type="text" id="add1" name="add1" ></td>
+                                            <td><label>  Address Line 1 *</label></td> <td><input type="text" id="add1" name="add1" onkeyup = "verifyInput()" ></td>
                                             
                                         </tr>
                                             
                                         <tr>
-                                            <td> <label> Address Line 2</label></td> <td> <input type="text" name="add2"></td>
+                                            <td> <label> Address Line 2</label></td> <td> <input type="text" name="add2" onkeyup = "verifyInput()" ></td>
                                         </tr>
                                             
                                         <tr>
-                                            <td><label> City *</label></td> <td><input type="text" id="city" name="city" ></td>
+                                            <td><label> City *</label></td> <td><input type="text" id="city" name="city" onkeyup = "verifyInput()" ></td>
                                         </tr>
                                             
                                         <tr>
-                                            <td><label> State/Province *</label></td> <td><input type="text" id="state" name="state" ></td>
+                                            <td><label> State/Province *</label></td> <td><input type="text" id="state" name="state" onkeyup = "verifyInput()" ></td>
                                         </tr>
                                             
                                         <tr>
-                                            <td><label> Zipcode *</label></td> <td><input type="text" id="zip" name="zip" ></td>
+                                            <td><label> Zipcode *</label></td> <td><input type="text" id="zip" name="zip" onkeyup = "verifyInput()" ></td>
                                         </tr>
                                         
                                         <tr>
-                                            <td><label> Country *</label></td> <td><input type="text" id="country" name="country" ></td>
+                                            <td><label> Country *</label></td> <td><input type="text" id="country" name="country" onkeyup = "verifyInput()"  ></td>
                                         </tr>
                                         
                                 </table>
@@ -170,7 +202,7 @@
                                     <th></th>
                                  
                                     <tr>
-                                        <td><label> Username *</label></td> <td><input type="text" name="user"></td>
+                                        <td><label> Username *</label></td> <td><input type="text" name="user" id="user" onkeyup = "verifyInput()" > </td>
                                     </tr>
                                            
                                     
@@ -180,13 +212,15 @@
                                             
                                     </tr>
                                     
-                                   
+                                    <tr>
                                             <td><label> Re-enter Password *</label></td>
-                                            <td><input type="text" name="password-check"></td>
+                                            <td><input type="text" id="pass2" name="password-check" onkeyup = "matchPass()"></td>
                                             
                                     </tr>
                                 </table>
-                                <span id="message" style="color: red; font-size: 12px;"></span>
+                                <span id="message" style="color: red; font-size: 12px;"></span><br>
+                                <span id="message2" style="color: red; font-size: 12px;"></span><br>
+                                <span id="message3" style="color: red; font-size: 12px;"></span>
                                 
                             </div>
                        </div>
@@ -196,7 +230,7 @@
                    
                    
                    <input type="hidden" name="action" value="create_account">
-                    <input type="submit" value="Create Account" onclick = "return verifyInput()">
+                    <input type="submit" value="Create Account" onclick = "return validateForm()">
                         </form>
                    
                 
