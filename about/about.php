@@ -53,8 +53,72 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
         <div class="hero-image">
             <div class="hero-text">
                 <h1>About CyberGuard360</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus molestias omnis ad voluptatibus beatae, sunt voluptatum eos sequi culpa? Sed fugiat cupiditate dolore ipsum odio eum debitis odit facilis ipsam.</p>
+                <p>CyberGuard360 is a complete cyber security and compliance platform for SMB’s. CyberGuard’s product suite provides security at every step. At CyberGuard360, the best defense is an effective offense. CyberGuard360 has built next-generation breach prevention platforms just for MSP’s to make certain everyone is trained to spot a cyber-attack with an offensive-line of prevention that stops an attack before it strikes. There are 4 main products</p>
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-header">CP360</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Cyber Prospecting</h5>
+                            <ul>
+                                <li>Cyber Web Assignment Tool</li>
+                                <li>Dark Web Scanning</li>
+                                <li>CRIS0 Score</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">PG360</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Training and Compliance</h5>
+                            <ul>
+                                <li>Policy Management</li>
+                                <li>Cyber Training</li>
+                                <li>Weekly Security Shorts</li>
+                                <li>Dark Web Monitoring</li>
+                                <li>Simulating Phishing</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">OB360</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Technical Risk Assessment</h5>
+                            <ul>
+                                <li>Security Scanning</li>
+                                <li>Vulnerability Assessment</li>
+                                <li>Network Scanning</li>
+                                <li>Web Scanning</li>
+                                <li>Technical Assessment</li>
+                                <li>Remediation Recommendation</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">RA360</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Functional Risk Assessment</h5>
+                            <h6 class="card-subtitle">Mapping to:</h6>
+                            <ul>
+                                <li>Regulations</li>
+                                <li>Standards</li>
+                                <li>Domain</li>
+                                <li>Industry</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
                 <br>
+                <h1>About Us</h1>
+                <p>The Payment Card Industry Data Security Standard (PCI DSS) was developed to increase security and protection on payment card account data as well as globalize data security. PCI DSS outlines technical and operational requirements necessary to protect account data. On top of that, PCI DSS also can provide assistance in protection against threats and keep all elements in the payment ecosystem secure. 
+                </p>
+                <br>
+                <h1>About Our Product</h1>
+                <p>The goal of our compliance quiz is to give small businesses the opportunity to quickly test their compliance with PCI DSS guidelines in a simple and easy-to-understand format. The compliance quiz seeks to help small businesses identify any noncompliant aspect of their business so that they can address compliance issues before problems arise. This quiz is not a replacement for the full PCI DSS guidelines and participants should refer to the full PCI DSS guidelines if they have questions or want clarification on any of the guidelines. 
+                </p>
                 <div class="card">
                     <div class="card-header">
                         Helpful Links
