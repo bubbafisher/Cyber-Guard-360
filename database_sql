@@ -19,32 +19,26 @@ $sql = "CREATE TABLE ACCOUNTS (
         CREATE TABLE SURVEY (
         Survey_ID INT(6),
         Account_ID INT(6),
-        Question_ID INT(6),
-        Answer_ID INT(6),
         PRIMARY KEY (Survey_ID),
         FOREIGN KEY (Account_ID) REFERENCES ACCOUNTS(Account_ID),
-        FOREIGN KEY (Question_ID) REFERENCES QUESTIONS(Questions_ID),
-        FOREIGN KEY (Answer_ID) REFERENCES ANSWERS(Answer_ID)
         );
 
         CREATE TABLE QUESTIONS(
-        Survey_ID INT(6),
-        Account_ID INT(6),
-        Question_ID INT(6),
-        Answer_ID INT(6),
+        Question_ID INT(11),
+        Guideline INT(11),
+        Question TEXT, 
+        Hints TEXT,
+        Yes_id INT(11),
+        No_id INT(11),
         PRIMARY KEY (Question_ID),
-        FOREIGN KEY (Account_ID) REFERENCES ACCOUNTS(Account_ID),
-        FOREIGN KEY (Survey_ID) REFERENCES SURVEY(Survey_ID),
-        FOREIGN KEY (Answer_ID) REFERENCES ANSWERS(Answer_ID)
         );
 
         CREATE TABLE ANSWERS(
         Survey_ID INT(6),
-        Account_ID INT(6),
         Question_ID INT(6),
         Answer_ID INT(6),
+        Answer ENUM('yes', 'no', 'na')
         PRIMARY KEY (Answer_ID),
-        FOREIGN KEY (Account_ID) REFERENCES ACCOUNTS(Account_ID),
         FOREIGN KEY (Survey_ID) REFERENCES SURVEY(Survey_ID),
         FOREIGN KEY (Question_ID) REFERENCES QUESTIONS(Questions_ID)
         );
