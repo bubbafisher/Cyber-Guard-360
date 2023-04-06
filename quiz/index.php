@@ -56,11 +56,16 @@ switch($action)
             {
                 if(filter_input(INPUT_POST, 'no_id')==-1) //Check to see if no value is -1
                 {
-                    $question = get_guideline_question(filter_input(INPUT_POST, 'guideline')+1); //Get next guideline's question and see if its valid
-                    if($question!=null)
-                        include('quiz.php');
-                    else
-                        include('quiz_end.php');
+                    if(filter_input(INPUT_POST, 'guideline')>0) //Is this outside the prelude questions?
+                    {
+                        $question = get_guideline_question(filter_input(INPUT_POST, 'guideline')+1); //Get next guideline's question and see if its valid
+                        if($question!=null)
+                            include('quiz.php');
+                        else
+                            include('quiz_end.php');
+                    }
+                    else //The user does not need the quiz
+                            include('quiz_end.php');  
                 }
                 else
                 {
