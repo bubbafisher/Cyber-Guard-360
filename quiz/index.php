@@ -25,7 +25,8 @@ switch($action)
     case 'back':
         $survey_id = get_survey_by_id(filter_input(INPUT_POST, 'survey_id'));
         $question = get_question(get_last_question(filter_input(INPUT_POST, 'survey_id'))['question_id']);
-        $progress = (filter_input(INPUT_POST, 'questionID')/24)*100;
+        $qID = (int)filter_input(INPUT_POST, 'questionID');
+        $progress = ($qID/24)*100;
         include('quiz.php');
         break;
     case 'next':
@@ -34,6 +35,8 @@ switch($action)
             $survey_id = filter_input(INPUT_POST, 'survey_id');
             $question_id = filter_input(INPUT_POST, 'question_id');
             $answer = filter_input(INPUT_POST, 'answer');
+            $qID = (int)filter_input(INPUT_POST, 'questionID');
+            $progress = ($qID/24)*100;
             if(empty(get_answer($survey_id, $question_id))) //Check if question has been answered yet
                 create_answer($survey_id, $question_id, $answer); //Post answer to DB
             else
