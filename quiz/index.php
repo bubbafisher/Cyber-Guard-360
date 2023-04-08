@@ -18,7 +18,8 @@ switch($action)
         create_survey(filter_input(INPUT_POST, 'userID'));
         $survey_id = get_survey(filter_input(INPUT_POST, 'userID'));
         $question = get_question(filter_input(INPUT_POST, 'questionID'));
-        $progress = (filter_input(INPUT_POST, 'questionID')/24)*100;
+        $qID = (int)filter_input(INPUT_POST, 'questionID');
+        $progress = ($qID/24)*100;
         include('quiz.php');
         break;
     case 'back':
