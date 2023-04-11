@@ -39,10 +39,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
             
             <ul class="nav">
                 
-                <li><a href="#">About</a></li>
+                <<li><a href="../about/about.php">About</a></li>
                 <li><a href="#">Work</a></li>
                 <li><a href="#">Clients</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="../contact/contact.php">Contact</a></li>
             </ul>
                 
                
