@@ -37,6 +37,7 @@
                             <h4>This quiz will help you learn what steps you need to take to be PCI DSS compliant.</h4>
                         </div>
                     </div>
+                    <br>
                     <div class="row horizontal-center">
                         <div class="col">
                         <form action="." method="post"> 
@@ -48,7 +49,8 @@
                         </div>
                     </div>
                 </div>
-                
+                <br>
+                <br>
                 
                
                 

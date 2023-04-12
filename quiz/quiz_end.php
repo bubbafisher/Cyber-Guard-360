@@ -37,12 +37,15 @@
                             <h4>Thank you for your time! Take a look at your dashboard to see what your next steps are.</h4>
                         </div>
                     </div>
+                    <br>
                     <div class="row horizontal-center">
                         <div class="col">
                             <a href="#" class="btn btn-primary">Go to dashboard</a>
                         </div>
                     </div>
                 </div>
+                <br>
+                <br>
                 
                 
                
