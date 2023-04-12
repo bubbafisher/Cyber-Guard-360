@@ -21,7 +21,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
             
             <div id="logo">
                 
-                <img src="images/CG360.png" alt="CyberGuard360 logo">
+                <img src="../images/CG360.png" alt="CyberGuard360 logo">
                 
             </div>
             
