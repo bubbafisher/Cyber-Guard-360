@@ -17,15 +17,22 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
         
     </head>
     <body>
-        <header>
+    <header>
             
             <div id="logo">
                 
-                 <a href="../index.php"><img
-                        src="../images/CG360.png" 
-                        alt="CyberGuard360 logo"></a>
+                <img src="images/CG360.png" alt="CyberGuard360 logo">
                 
             </div>
+            
+            <nav>
+                
+                <li><a href="../about/about.php">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="../contact/contact.php">Contact</a></li>
+            </nav>
+            
             
             <div id="sign_up">
                 
@@ -35,15 +42,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                 
             </div>
             
+            
    
             
-            <ul class="nav">
-                
-                <li><a href="../about/about.php">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Clients</a></li>
-                <li><a href="../contact/contact.php">Contact</a></li>
-            </ul>
+           
                 
                
             
