@@ -21,19 +21,7 @@ header{
 }
 
 
-.wrapper{
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    height: 425px;
-    padding: 100px;
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 1px 3px 3px #878787;
-}
+
 
 #logo{
     position: fixed;
@@ -47,35 +35,42 @@ header{
     right: 10px;
 }
 
-.login_wrapper{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.wrapper{
+    
+    margin: auto;
+    margin-top: 150px;
+    width: 400px;
+    height: 425px;
+    padding: 100px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 1px 3px 3px #878787;
 }
 
-#aligned {
+
+.aligned {
      
-    margin: .5em 0 2em;
+    margin-top: -50px;
+    margin-left:-50px; 
 }
 
-#aligned h1{
+.aligned h1{
     text-align: center;
     margin-bottom: 20px;
    
 }
 
-#aligned label {
+.aligned label {
     width: 6.5em;
     margin-top: .2em;
     margin-right: 1.5em;
     margin-bottom: 10px;
     float: left;
 }
-#aligned input {
+.aligned input {
     float: left;
 }
-#aligned input[type="text"] {
+.aligned input[type="text"] {
     margin-top: -15px;
     width: 16.6em;
     background-color: #eaeaea;
@@ -84,20 +79,20 @@ header{
     height: 35px;
 }
 
-#aligned input[type ="submit"]{
+.aligned input[type ="submit"]{
     text-align: center;
     width: 100%;
     margin-top: -12px;
     margin-bottom: 35px;
 }
 
-#aligned p{
+.aligned p{
     margin-top: 20px;
     margin-bottom: 0;
     text-align: center;
 }
 
-#aligned a{
+.aligned a{
     text-decoration: none;
     color: #3d5dff;
 }

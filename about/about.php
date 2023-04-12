@@ -17,11 +17,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
         
     </head>
     <body>
-    <header>
+        <header>
             
             <div id="logo">
                 
-                <img src="../images/CG360.png" alt="CyberGuard360 logo">
+                 <a href="../index.php"><img
+                        src="../images/CG360.png" 
+                        alt="CyberGuard360 logo"></a>
                 
             </div>
             
@@ -33,7 +35,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                 <li><a href="../contact/contact.php">Contact</a></li>
             </nav>
             
-            
             <div id="sign_up">
                 
                  <input type="button"
@@ -42,23 +43,27 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                 
             </div>
             
-            
    
             
-           
+            
                 
                
             
         </header>
         
         <!-- creating landing page Hero -->
-        <div class="hero-image">
-            <div class="hero-text">
-                <h1>About CyberGuard360</h1>
-            </div>
-            
-            <div class="about">
-                <p>CyberGuard360 is a complete cyber security and compliance platform for SMB’s. CyberGuard’s product suite provides security at every step. At CyberGuard360, the best defense is an effective offense. CyberGuard360 has built next-generation breach prevention platforms just for MSP’s to make certain everyone is trained to spot a cyber-attack with an offensive-line of prevention that stops an attack before it strikes. There are 4 main products</p>
+        <div class="about-hero-image">
+            <div class="hero-text" style="width: 100%; text-align: center;">
+                <h1>CyberGuard360</h1>
+                <p class="bottom_text">The complete cyber
+                    security and compliance platform for SMB’s</p>
+           </div>
+        </div>   
+        <br>
+        <br>
+        
+        
+                
                 <div class="card-group">
                     <div class="card">
                         <div class="card-header">CP360</div>
@@ -117,25 +122,41 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                     </div>
                 </div>
                 <br>
+                
+             
+                <div class="about_text">
+                <h1>About Our Products</h1> 
+                   <p>
+                       CyberGuard’s product suite provides security at every step.
+                        At CyberGuard360, the best defense is an effective offense.
+                        CyberGuard360 has built next-generation breach prevention
+                        platforms just for MSP’s to make certain everyone is trained
+                        to spot a cyber-attack with an offensive-line of prevention
+                        that stops an attack before it strikes. 
+             
+                    </p>
                 <h1>About Us</h1>
                 <p>The Payment Card Industry Data Security Standard (PCI DSS) was developed to increase security and protection on payment card account data as well as globalize data security. PCI DSS outlines technical and operational requirements necessary to protect account data. On top of that, PCI DSS also can provide assistance in protection against threats and keep all elements in the payment ecosystem secure. 
                 </p>
                 <br>
-                <h1>About Our Product</h1>
+                <h1>About This Product</h1>
                 <p>The goal of our compliance quiz is to give small businesses the opportunity to quickly test their compliance with PCI DSS guidelines in a simple and easy-to-understand format. The compliance quiz seeks to help small businesses identify any noncompliant aspect of their business so that they can address compliance issues before problems arise. This quiz is not a replacement for the full PCI DSS guidelines and participants should refer to the full PCI DSS guidelines if they have questions or want clarification on any of the guidelines. 
                 </p>
+                <br>
+                <h1>Helpful Links</h1>
+                
                 <div class="card">
-                    <div class="card-header">
-                        Helpful Links
-                      </div>
+                    
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">PCI DSS Guidelines: <a href="https://docs-prv.pcisecuritystandards.org/PCI%20DSS/Standard/PCI-DSS-v4_0.pdf">https://docs-prv.pcisecuritystandards.org/PCI%20DSS/Standard/PCI-DSS-v4_0.pdf</a></li>
                         </ul>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Link 2:</li>
+                            <li class="list-group-item">Why PCI DSS is Important:
+                                <a href="https://www.securitymetrics.com/blog/importance-pci-dss-why-you-should-get-compliant">https://www.securitymetrics.com/blog/importance-pci-dss-why-you-should-get-compliant</a></li>
                         </ul>
                 </div>
             </div>
-        </div>
+            
+     
         
    <?php include '../views/footer.php';

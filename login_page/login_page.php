@@ -38,8 +38,8 @@
     
     <div class="wrapper">
     
-    <div class="login_wrapper">
-        <div id="aligned">
+    
+        <div class="aligned">
             <h1>Log in</h1>
             <form action="." method="post">
                 <label> Email</label><br><br>
@@ -57,14 +57,18 @@
                 <p> Don't have an Account?
                     <a href='../create_account/create_account.php'>Sign Up</a>
                 </p>
+                
+                
         </div>
         
     </div>
        
-    </div>
+  
      
     <div id='extras'>
-     
+        <p>
+            Wanna skip the login?
+        </p>
     </div>
 </main>
         

@@ -159,6 +159,80 @@ span{
 
 
 
+/* About Page CSS */
+.about-hero-image {
+  margin-bottom: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/about_page_hero.jpg");
+
+ 
+  
+  width: 100%;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.card-group{
+    
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+.about_text{
+    
+    margin: 100px;
+    margin-right: 500px;
+    
+}
+
+.bottom_text{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+
+
+
+
+
+
+/* Contact Page*/
+
+.contact-hero-image {
+  margin-bottom: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/tech-matrix.jpg");
+
+ 
+  
+  width: 100%;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.emails{
+    padding: 100px;
+}
+
+.emails h2{
+    
+    padding-bottom: 10px;
+    
+}
+
+.emails li{
+    list-style: none;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+
+
 footer {
 
 position: relative;

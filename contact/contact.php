@@ -17,11 +17,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
         
     </head>
     <body>
-    <header>
+        <header>
             
             <div id="logo">
                 
-                <img src="../images/CG360.png" alt="CyberGuard360 logo">
+                 <a href="../index.php"><img
+                        src="../images/CG360.png" 
+                        alt="CyberGuard360 logo"></a>
                 
             </div>
             
@@ -33,7 +35,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                 <li><a href="../contact/contact.php">Contact</a></li>
             </nav>
             
-            
             <div id="sign_up">
                 
                  <input type="button"
@@ -42,30 +43,40 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                 
             </div>
             
-            
    
             
-           
+            
                 
                
             
         </header>
         
         <!-- creating landing page Hero -->
-        <div class="hero-image">
+        <div class="contact-hero-image">
             <div class="hero-text">
                 <h1>Contact Us</h1>
+                
             </div>
-
-            <div class="about">
-                <ul>
+            
+        </div>
+        
+        <div class="emails">
+        <h2>Project Managers</h2>
+        <ul>
+            <li>Robert Lawson</li>
+            <li>Stephen Lobo</li>
+        </ul>
+        <h2>Developers</h2>
+        <ul>
                     <li>Brendan Fisher - <a href="mailto:fisherbm@g.cofc.edu">fisherbm@g.cofc.edu</a></li>
                     <li>Chase Friedfertig - <a href="mailto:friedfertigc@g.cofc.edu">friedfertigc@g.cofc.edu</a></li>
                     <li>Zach Pace - <a href="mailto:pacezd@g.cofc.edu">pacezd@g.cofc.edu</a></li>
                     <li>Christy Schoener - <a href="mailto:shoenerca@g.cofc.edu">shoenerca@g.cofc.edu</a></li>
                 </ul>
-            </div>
-            
-        </div>
         
+        <h2>Advisors</h2>
+        <ul>
+            <li>RoxAnn Stalvey</li>
+        </ul>
+        </div>
    <?php include '../views/footer.php';
