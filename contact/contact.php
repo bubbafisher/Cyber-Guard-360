@@ -53,6 +53,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
         <div class="hero-image">
             <div class="hero-text">
                 <h1>Contact Us</h1>
+            </div>
+
+            <div class="about">
                 <ul>
                     <li>Brendan Fisher - <a href="mailto:fisherbm@g.cofc.edu">fisherbm@g.cofc.edu</a></li>
                     <li>Chase Friedfertig - <a href="mailto:friedfertigc@g.cofc.edu">friedfertigc@g.cofc.edu</a></li>

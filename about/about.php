@@ -53,6 +53,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
         <div class="hero-image">
             <div class="hero-text">
                 <h1>About CyberGuard360</h1>
+            </div>
+            
+            <div class="about">
                 <p>CyberGuard360 is a complete cyber security and compliance platform for SMB’s. CyberGuard’s product suite provides security at every step. At CyberGuard360, the best defense is an effective offense. CyberGuard360 has built next-generation breach prevention platforms just for MSP’s to make certain everyone is trained to spot a cyber-attack with an offensive-line of prevention that stops an attack before it strikes. There are 4 main products</p>
                 <div class="card-group">
                     <div class="card">
@@ -131,7 +134,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                         </ul>
                 </div>
             </div>
-            
         </div>
         
    <?php include '../views/footer.php';
