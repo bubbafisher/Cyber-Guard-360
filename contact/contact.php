@@ -71,7 +71,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                     <li>Brendan Fisher - <a href="mailto:fisherbm@g.cofc.edu">fisherbm@g.cofc.edu</a></li>
                     <li>Chase Friedfertig - <a href="mailto:friedfertigc@g.cofc.edu">friedfertigc@g.cofc.edu</a></li>
                     <li>Zach Pace - <a href="mailto:pacezd@g.cofc.edu">pacezd@g.cofc.edu</a></li>
-                    <li>Christy Schoener - <a href="mailto:shoenerca@g.cofc.edu">shoenerca@g.cofc.edu</a></li>
+                    <li>Christy Shoener - <a href="mailto:shoenerca@g.cofc.edu">shoenerca@g.cofc.edu</a></li>
                 </ul>
         
         <h2>Advisors</h2>
