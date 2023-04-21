@@ -40,7 +40,7 @@
                     <br>
                     <div class="row horizontal-center">
                         <div class="col">
-                            <a href="#" class="btn btn-primary">Go to dashboard</a>
+                            <a href="../dashboard.php" class="btn btn-primary">Go to dashboard</a>
                         </div>
                     </div>
                 </div>
