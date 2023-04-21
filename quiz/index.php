@@ -70,7 +70,7 @@ switch($action)
                             include('quiz_end.php');
                     }
                     else //The user does not need the quiz
-                            include('quiz_end.php');  
+                            include('quiz_stop.php');  
                 }
                 else
                 {
