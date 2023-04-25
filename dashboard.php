@@ -42,7 +42,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                 
                  <input type="button"
                         onclick="window.location.href='login_page/login_page.php';"
-                        value="Sign In">
+                        value="Sign Out">
                 
             </div>
             
@@ -62,33 +62,33 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
               <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 text-bg-dark">
                   <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark">
                     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                      <span class="fs-4">Sidebar</span>
+                      <span class="fs-4">Dashboard</span>
                     </a>
                     <hr>
                       <ul class="nav nav-pills flex-column mb-auto" id="menu">
                           <li class="nav-item">
                             <a href="#" class="nav-link active" aria-current="page">
-                              Home
+                              Overview
                             </a>
                           </li>
                           <li>
                             <a href="#" class="nav-link text-white">
-                              Dashboard
+                              Detailed View
+                            </a>
+                          </li>
+                          <li>
+                            <a href="quiz/" class="nav-link text-white">
+                              Retake Quiz
                             </a>
                           </li>
                           <li>
                             <a href="#" class="nav-link text-white">
-                              Orders
+                              Options
                             </a>
                           </li>
                           <li>
                             <a href="#" class="nav-link text-white">
-                              Products
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#" class="nav-link text-white">
-                              Customers
+                              Help
                             </a>
                           </li>
                           <br>
@@ -122,12 +122,93 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                   </div>
               </div>
               <div class="col py-3">
-                <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="row row-cols-1 row-cols-md-5 g-4">
+                  <div class="col">
+                    <div class="card text-center border-success mb-3" style="width: 18rem;">
+                      <div class="card-body text-success">
+                        <h5 class="card-title">Network Security</h5>
+                        <p class="card-text">100%</p>
+                        <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar progress-bar-striped bg-success" style="width: 100%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card text-center border-success mb-3" style="width: 18rem;">
+                      <div class="card-body text-success">
+                        <h5 class="card-title">Device Security</h5>
+                        <p class="card-text">100%</p>
+                        <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar progress-bar-striped bg-success" style="width: 100%"></div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="col">
                     <div class="card text-center mb-3" style="width: 18rem;">
                       <div class="card-body">
-                        <h5 class="card-title">Tile Title</h5>
-                        <p class="card-text">Tile text</p>
+                        <h5 class="card-title">Data Storage</h5>
+                        <p class="card-text">43%</p>
+                        <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar progress-bar-striped" style="width: 43%"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card text-center mb-4" style="width: 18rem;">
+                      <div class="card-header text-bg-dark">
+                        Todo
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                          <label class="form-check-label" for="firstCheckbox">Minimize account data storage</label>
+                        </li>
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                          <label class="form-check-label" for="secondCheckbox">Disposing of PINs and card IDs</label>
+                        </li>
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                          <label class="form-check-label" for="thirdCheckbox">Securely store account numbers</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card text-center mb-3" style="width: 18rem;">
+                      <div class="card-body">
+                        <h5 class="card-title">Account Security</h5>
+                        <p class="card-text">0%</p>
+                        <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar progress-bar-striped" style="width: 0%"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card text-center mb-4" style="width: 18rem;">
+                      <div class="card-header text-bg-dark">
+                        Todo
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                          <label class="form-check-label" for="firstCheckbox">Securely send cardholder data</label>
+                        </li>
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                          <label class="form-check-label" for="secondCheckbox">Account numbers are encrypted</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card text-center border-success mb-3" style="width: 18rem;">
+                      <div class="card-body text-success">
+                        <h5 class="card-title">Malware Protection</h5>
+                        <p class="card-text">100%</p>
+                        <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar progress-bar-striped bg-success" style="width: 100%"></div>
+                        </div>
                       </div>
                     </div>
                   </div>
