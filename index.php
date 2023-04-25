@@ -64,7 +64,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                 <p>Test Your Business' PCI Compliance With Us </p>
                 
                 <input type="button"
-                       onclick="window.location.href='login_page/login_page.php';"
+                       onclick="window.location.href='quiz/';"
                        value="Secure Now">
             </div>
           </div>
